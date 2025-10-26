@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RepairGo - Home Appliance Repair in Agra</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif;}
+    body {background:#fff; color:#111;}
+    a {text-decoration:none; color:inherit;}
+
+    /* Header */
+    header {
+      background:#131921; color:white; padding:10px 20px;
+      display:flex; justify-content:space-between; align-items:center;
+      position:sticky; top:0; z-index:1000; flex-wrap:wrap;
+    }
+    header h1 {font-size:1.5rem;}
+    header img {height:40px; width:auto;}
+
+    /* Hero */
+    .hero {
+      background:url("https://images.unsplash.com/photo-1581092160562-40aa6c2a1a09?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
+      text-align:center; padding:80px 20px; color:#ff9900;
+    }
+    .hero h2 {font-size:2rem; margin-bottom:10px; text-shadow:1px 1px 3px black;}
+    .hero p {font-size:1.1rem; text-shadow:1px 1px 2px black;}
+    .hero a {
+      display:inline-block; margin-top:15px; padding:12px 22px;
+      background:#ff9900; color:white; border-radius:5px; font-weight:bold;
+    }
+    .hero .hero-text {
+      color:black; margin-top:20px; font-size:1rem; line-height:1.5rem; background:rgba(255,255,255,0.8);
+      display:inline-block; padding:10px 20px; border-radius:10px;
+    }
+
+    /* Section Title */
+    h2.section-title {
+      text-align:center;
+      font-size:1.8rem;
+      margin-bottom:25px;
+      color:#111;
+    }
+
+    /* Services */
+    .container {max-width:1200px; margin:auto; padding:40px 20px;}
+    .services {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:20px;
+    }
+    .card {
+      border:1px solid #ddd; border-radius:10px; padding:20px; background:white;
+      text-align:center; transition:transform .2s ease;
+    }
+    .card:hover {transform:translateY(-5px);}
+    .card img {
+      width:70px; height:70px; object-fit:contain; margin-bottom:15px;
+    }
+    .card h3 {margin-bottom:10px; font-size:1.1rem;}
+    .card p {font-size:0.9rem; color:#555;}
+
+    /* Our Work Section */
+    .our-work {
+      background:#f8f8f8;
+      padding:40px 20px;
+    }
+    .work-gallery {
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+      gap:20px;
+      max-width:1200px;
+      margin:auto;
+    }
+    .work-gallery img {
+      width:100%;
+      height:200px;
+      object-fit:cover;
+      border-radius:10px;
+      border:1px solid #ddd;
+      transition:transform .3s ease;
+    }
+    .work-gallery img:hover {
+      transform:scale(1.03);
+    }
+
+    /* Contact Section */
+    .contact {
+      background:#f5f5f5;
+      padding:40px 20px;
+      text-align:center;
+    }
+    .contact h2 {margin-bottom:20px; font-size:1.8rem;}
+    .contact p {margin-bottom:15px; font-size:1rem;}
+    .contact a {
+      color:#ff9900; font-weight:bold;
+    }
+    form {
+      max-width:500px; margin:20px auto; text-align:left;
+      background:white; padding:20px; border-radius:10px; border:1px solid #ddd;
+    }
+    input, textarea {
+      width:100%; padding:10px; margin-bottom:10px;
+      border:1px solid #ccc; border-radius:5px; font-size:1rem;
+    }
+    button {
+      background:#ff9900; color:white; padding:10px 20px;
+      border:none; border-radius:5px; cursor:pointer; font-size:1rem;
+    }
+    button:hover {background:#e68a00;}
+
+    /* Footer */
+    footer {
+      background:#131921; color:white; padding:20px; text-align:center; margin-top:40px;
+    }
+    footer a {color:#ff9900;}
+    footer a:hover {text-decoration:underline;}
+
+    /* Mobile Responsive */
+    @media(max-width:768px){
+      header {flex-direction:column; align-items:center;}
+      .hero {padding:60px 15px;}
+      .hero h2 {font-size:1.6rem;}
+      .hero p {font-size:1rem;}
+      .card img {width:60px; height:60px;}
+    }
+    @media(max-width:480px){
+      header h1 {font-size:1.2rem;}
+      .hero h2 {font-size:1.4rem;}
+      .hero p {font-size:0.9rem;}
+      .card h3 {font-size:1rem;}
+      .card p {font-size:0.85rem;}
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div style="display:flex; align-items:center; gap:10px;">
+      <img src="logo.png" alt="RepairGo Logo">
+      <h1>RepairGo</h1>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Trusted Appliance Repair in Agra</h2>
+    <p>AC • Washing Machine • Fridge • Geyser • Microwave • RO • TV – Doorstep Service in Agra</p>
+    <a href="tel:+919997923986">📞 Call Now</a>
+    <div class="hero-text">
+      <p>We are Agra’s most reliable and trusted appliance repair service. Our expert technicians ensure fast, efficient, and affordable repair service at your doorstep. Customer satisfaction is our top priority!</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container">
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/air-conditioner.png" alt="AC Repair">
+        <h3>AC Repair</h3>
+        <p>Fast AC repair & servicing across Agra.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/washing-machine.png" alt="Washing Machine Repair">
+        <h3>Washing Machine</h3>
+        <p>Reliable repair for all washing machine models.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/fridge.png" alt="Fridge Repair">
+        <h3>Fridge Repair</h3>
+        <p>Keep your refrigerator running efficiently.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/water-heater.png" alt="Geyser Repair">
+        <h3>Geyser Repair</h3>
+        <p>Quick geyser repair & installation service.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/microwave.png" alt="Microwave Repair">
+        <h3>Microwave Repair</h3>
+        <p>Fixing heating issues, sparking, and door problems.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/water.png" alt="RO Repair">
+        <h3>RO Water Purifier</h3>
+        <p>RO installation, servicing, and water quality check.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/tv.png" alt="TV Repair">
+        <h3>LED / LCD TV</h3>
+        <p>Screen, sound & connectivity repair for all TVs.</p>
+      </div>
+      <div class="card">
+        <img src="https://img.icons8.com/ios-filled/100/000000/screwdriver.png" alt="Other Repairs">
+        <h3>Other Repairs</h3>
+        <p>Mixers, Fans, Ovens, Grinders, Chimneys & more.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Work Section -->
+  <section class="our-work">
+    <h2 class="section-title">Our Work</h2>
+    <div class="work-gallery">
+      <img src="ac repair.jpg" alt="Technician repairing AC">
+      <img src="ac repair2.jpg" alt="Repairing washing machine">
+      <img src="ac repair3.jpg" alt="Technician repairing computer">
+      <img src="acrepair.jpg" alt="Technician repairing fridge">
+      <img src="https://images.unsplash.com/photo-1581092795360-fd1e7c1c1cdb?auto=format&fit=crop&w=800&q=80" alt="Electronic repair tools">
+      <img src="https://images.unsplash.com/photo-1624972409785-7e14e4d48e4a?auto=format&fit=crop&w=800&q=80" alt="Technician repairing PC">
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>📍 100 Foota Road, Rajpur Chungi, Agra</p>
+    <p>📞 <a href="tel:+919997923986">+91 9997923986</a></p>
+    <p>📧 repairgoagra@gmail.com</p>
+
+    <form onsubmit="alert('Thank you! Your message has been sent.'); return false;">
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Your name" required>
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="Your phone number" required>
+      <label for="message">Message</label>
+      <textarea id="message" rows="4" placeholder="Describe your issue..." required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 RepairGo Agra | All Rights Reserved</p>
+    <p>Designed by RepairGo</p>
+  </footer>
+</body>
+</html>
